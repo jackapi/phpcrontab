@@ -1,0 +1,31 @@
+{
+  "name": "jackapi/phpcrontab",
+  "description": "phpcrontab",
+  "type": "library",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "jackapi",
+      "email": "apiziliao@gmail.com"
+    }
+  ],
+  "minimum-stability": "dev",
+  "require": {
+    "php": ">=7.0.0",
+    "poliander/cron": "dev-master"
+  },
+  "autoload": {
+    "psr-4": {
+      "Jackapi\\Library\\": "src/Jackapi/Library"
+    }
+  },
+  "config": {
+    "process-timeout": 1800
+  },
+  "repositories": {
+    "packagist": {
+      "type": "composer",
+      "url": "https://mirrors.aliyun.com/composer/"
+    }
+  }
+}

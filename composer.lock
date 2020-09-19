@@ -1,0 +1,69 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
+        "This file is @generated automatically"
+    ],
+    "content-hash": "372c3324b35c388dcb5468002aedd57b",
+    "packages": [
+        {
+            "name": "poliander/cron",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/poliander/cron.git",
+                "reference": "c892db5755217f13373ec75207a678a7e873941a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/poliander/cron/zipball/c892db5755217f13373ec75207a678a7e873941a",
+                "reference": "c892db5755217f13373ec75207a678a7e873941a",
+                "shasum": "",
+                "mirrors": [
+                    {
+                        "url": "https://mirrors.aliyun.com/composer/dists/%package%/%reference%.%type%",
+                        "preferred": true
+                    }
+                ]
+            },
+            "require": {
+                "php": "~7.2"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~8.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Cron\\": "src/Cron/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-3.0"
+            ],
+            "authors": [
+                {
+                    "name": "René Pollesch",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Standard (V7) compliant crontab expression parser/validator with support for time zones",
+            "homepage": "https://github.com/poliander/cron",
+            "time": "2019-12-03T15:56:44+00:00"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "dev",
+    "stability-flags": {
+        "poliander/cron": 20
+    },
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": {
+        "php": ">=7.0.0"
+    },
+    "platform-dev": [],
+    "plugin-api-version": "1.1.0"
+}
