@@ -10,7 +10,7 @@ composer require jackapi/phpcrontab dev-master
 
 - 使用第三方
 ```php
-cron解析 https://github.com/mtdowling/cron-expression
+cron解析 https://github.com/dragonmantank/cron-expression
 ```
 
 - 使用方法

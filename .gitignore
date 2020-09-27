@@ -1,3 +1,4 @@
 /vendor/
 /.idea
 /1.log
+/composer.lock

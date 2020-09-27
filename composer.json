@@ -11,7 +11,8 @@
   ],
   "minimum-stability": "dev",
   "require": {
-    "php": ">=7.0.0"
+    "php": ">=7.0.0",
+    "dragonmantank/cron-expression": "dev-master"
   },
   "autoload": {
     "psr-4": {
@@ -28,7 +29,6 @@
     }
   },
   "require-dev": {
-    "eaglewu/swoole-ide-helper": ">=dev-master",
-    "dragonmantank/cron-expression": ">=dev-master"
+    "eaglewu/swoole-ide-helper": "dev-master"
   }
 }
