@@ -94,6 +94,9 @@ class phpcrontab
                 $logs = new log($this->log);
                 $logs->write($log);
             }
+            if ($this->debug) {
+                echo $log . PHP_EOL;
+            }
         });
     }
 }
