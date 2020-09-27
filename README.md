@@ -5,7 +5,7 @@
 
 - 安装方式
 ```php
-composer require jackapi/phpcrontab
+composer require jackapi/phpcrontab dev-master
 ```
 
 - 使用第三方
