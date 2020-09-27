@@ -4,20 +4,21 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "f36fb67ce0c544f707598d7a0e9db021",
-    "packages": [
+    "content-hash": "a7c3ee63281902e9987198e5175bcc40",
+    "packages": [],
+    "packages-dev": [
         {
-            "name": "mtdowling/cron-expression",
+            "name": "dragonmantank/cron-expression",
             "version": "dev-master",
             "source": {
                 "type": "git",
-                "url": "https://github.com/mtdowling/cron-expression.git",
-                "reference": "d060aaded455d9eba498553f0566309867686144"
+                "url": "https://github.com/dragonmantank/cron-expression.git",
+                "reference": "fa4e95ff5a7f1d62c3fbc05c32729b7f3ca14b52"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/mtdowling/cron-expression/zipball/d060aaded455d9eba498553f0566309867686144",
-                "reference": "d060aaded455d9eba498553f0566309867686144",
+                "url": "https://api.github.com/repos/dragonmantank/cron-expression/zipball/fa4e95ff5a7f1d62c3fbc05c32729b7f3ca14b52",
+                "reference": "fa4e95ff5a7f1d62c3fbc05c32729b7f3ca14b52",
                 "shasum": "",
                 "mirrors": [
                     {
@@ -27,10 +28,14 @@
                 ]
             },
             "require": {
-                "php": ">=7.0.0"
+                "php": "^7.1"
+            },
+            "replace": {
+                "mtdowling/cron-expression": "^1.0"
             },
             "require-dev": {
-                "phpunit/phpunit": "~5.7"
+                "phpstan/phpstan": "^0.11",
+                "phpunit/phpunit": "^6.4|^7.0"
             },
             "type": "library",
             "autoload": {
@@ -44,9 +49,9 @@
             ],
             "authors": [
                 {
-                    "name": "Michael Dowling",
-                    "email": "mtdowling@gmail.com",
-                    "homepage": "https://github.com/mtdowling"
+                    "name": "Chris Tankersley",
+                    "email": "chris@ctankersley.com",
+                    "homepage": "https://github.com/dragonmantank"
                 }
             ],
             "description": "CRON for PHP: Calculate the next or previous run date and determine if a CRON expression is due",
@@ -54,11 +59,14 @@
                 "cron",
                 "schedule"
             ],
-            "abandoned": "dragonmantank/cron-expression",
-            "time": "2019-12-20T16:08:58+00:00"
-        }
-    ],
-    "packages-dev": [
+            "funding": [
+                {
+                    "url": "https://github.com/dragonmantank",
+                    "type": "github"
+                }
+            ],
+            "time": "2020-08-21T02:30:13+00:00"
+        },
         {
             "name": "eaglewu/swoole-ide-helper",
             "version": "dev-master",
@@ -111,9 +119,7 @@
     ],
     "aliases": [],
     "minimum-stability": "dev",
-    "stability-flags": {
-        "eaglewu/swoole-ide-helper": 20
-    },
+    "stability-flags": [],
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {
