@@ -1,25 +1,16 @@
 <?php
+
+
 require_once 'vendor/autoload.php';
 
-$crontab = [
-    ['1 * * * *', 'test1', ''],
-    ['1 * * * *', 'test2', ''],
+//crontab表达式 名称 类 执行方法
+$crontabData = [
+    'debug' => true,
+    'log' => "./1.log",
+    ['*/1 * * * *', 'test1', new \Jackapi\testCrontab(), 'whileTest'],
+    ['*/2 * * * *', 'test2', new \Jackapi\testCrontab(), 'getDate'],
+    ['*/3 * * * *', 'test3', 'date', ''],
+
 ];
-
-$server = new WebSocket\Server([
-    'timeout' => 60, // 1 minute time out
-    'port' => 9000,
-]);
-while ($server->accept()) {
-    try {
-        $server->send('1');
-        $message = $server->receive();
-        var_dump($message);
-
-        // Act on received message
-        // Break while loop to stop listening
-    } catch (\WebSocket\ConnectionException $e) {
-        // Possibly log errors
-    }
-}
-$server->close();
+$crontab = new Jackapi\phpcrontab($crontabData);
+$crontab->run();

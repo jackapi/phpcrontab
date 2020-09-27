@@ -4,20 +4,20 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "372c3324b35c388dcb5468002aedd57b",
+    "content-hash": "42267f311d1a4ab077030a1274c66f46",
     "packages": [
         {
-            "name": "poliander/cron",
+            "name": "mtdowling/cron-expression",
             "version": "dev-master",
             "source": {
                 "type": "git",
-                "url": "https://github.com/poliander/cron.git",
-                "reference": "c892db5755217f13373ec75207a678a7e873941a"
+                "url": "https://github.com/mtdowling/cron-expression.git",
+                "reference": "d060aaded455d9eba498553f0566309867686144"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/poliander/cron/zipball/c892db5755217f13373ec75207a678a7e873941a",
-                "reference": "c892db5755217f13373ec75207a678a7e873941a",
+                "url": "https://api.github.com/repos/mtdowling/cron-expression/zipball/d060aaded455d9eba498553f0566309867686144",
+                "reference": "d060aaded455d9eba498553f0566309867686144",
                 "shasum": "",
                 "mirrors": [
                     {
@@ -27,10 +27,10 @@
                 ]
             },
             "require": {
-                "php": "~7.2"
+                "php": ">=7.0.0"
             },
             "require-dev": {
-                "phpunit/phpunit": "~8.0"
+                "phpunit/phpunit": "~5.7"
             },
             "type": "library",
             "autoload": {
@@ -40,24 +40,80 @@
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
-                "GPL-3.0"
+                "MIT"
             ],
             "authors": [
                 {
-                    "name": "René Pollesch",
-                    "role": "Developer"
+                    "name": "Michael Dowling",
+                    "email": "mtdowling@gmail.com",
+                    "homepage": "https://github.com/mtdowling"
                 }
             ],
-            "description": "Standard (V7) compliant crontab expression parser/validator with support for time zones",
-            "homepage": "https://github.com/poliander/cron",
-            "time": "2019-12-03T15:56:44+00:00"
+            "description": "CRON for PHP: Calculate the next or previous run date and determine if a CRON expression is due",
+            "keywords": [
+                "cron",
+                "schedule"
+            ],
+            "abandoned": "dragonmantank/cron-expression",
+            "time": "2019-12-20T16:08:58+00:00"
         }
     ],
-    "packages-dev": [],
+    "packages-dev": [
+        {
+            "name": "eaglewu/swoole-ide-helper",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/wudi/swoole-ide-helper.git",
+                "reference": "e9e0575b6acb5eb1cd8af3fa7b292eb57ec88497"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/wudi/swoole-ide-helper/zipball/e9e0575b6acb5eb1cd8af3fa7b292eb57ec88497",
+                "reference": "e9e0575b6acb5eb1cd8af3fa7b292eb57ec88497",
+                "shasum": "",
+                "mirrors": [
+                    {
+                        "url": "https://mirrors.aliyun.com/composer/dists/%package%/%reference%.%type%",
+                        "preferred": true
+                    }
+                ]
+            },
+            "require": {
+                "php": ">=7.0"
+            },
+            "type": "library",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "eagle",
+                    "email": "eaglewudi@gmail.com",
+                    "role": "lead"
+                }
+            ],
+            "description": "Swoole IDE Helper, to improve auto-completion",
+            "keywords": [
+                "autocomplete",
+                "codeintel",
+                "helper",
+                "ide",
+                "netbeans",
+                "phpdoc",
+                "phpstorm",
+                "sublime",
+                "swoole"
+            ],
+            "time": "2020-07-14T13:36:33+00:00"
+        }
+    ],
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
-        "poliander/cron": 20
+        "mtdowling/cron-expression": 20,
+        "eaglewu/swoole-ide-helper": 20
     },
     "prefer-stable": false,
     "prefer-lowest": false,

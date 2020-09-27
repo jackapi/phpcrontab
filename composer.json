@@ -12,11 +12,11 @@
   "minimum-stability": "dev",
   "require": {
     "php": ">=7.0.0",
-    "poliander/cron": "dev-master"
+    "mtdowling/cron-expression": "dev-master"
   },
   "autoload": {
     "psr-4": {
-      "Jackapi\\Library\\": "src/Jackapi/Library"
+      "Jackapi\\": "src/Jackapi"
     }
   },
   "config": {
@@ -27,5 +27,8 @@
       "type": "composer",
       "url": "https://mirrors.aliyun.com/composer/"
     }
+  },
+  "require-dev": {
+    "eaglewu/swoole-ide-helper": "dev-master"
   }
 }
