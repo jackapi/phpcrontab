@@ -2,3 +2,5 @@
 /.idea
 /1.log
 /composer.lock
+/cache.data
+/timer.pid

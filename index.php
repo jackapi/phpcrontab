@@ -7,6 +7,9 @@ require_once 'vendor/autoload.php';
 $crontabData = [
     'debug' => true,
     'log' => "./1.log",
+    'cache_data' => "./cache.data",
+    'pid' => "./timer.pid",
+    'swoole_tick' => [true, 1000],
     ['*/1 * * * *', 'test1', new \Jackapi\testCrontab(), 'whileTest'],
     ['*/2 * * * *', 'test2', new \Jackapi\testCrontab(), 'getDate'],
     ['*/3 * * * *', 'test3', 'date', ''],
